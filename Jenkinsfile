@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // 특정 디렉토리로 이동하여 yarn 설치
-                    dir('BooksLife/bookslife-app') {
+                    dir('bookslife-app') {
                         sh '''
                         echo "Installing dependencies..."
                         yarn install
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     // 특정 디렉토리로 이동하여 빌드 실행
-                    dir('BooksLife/bookslife-app') {
+                    dir('bookslife-app') {
                         sh '''
                         echo "Building the application..."
                         yarn build
